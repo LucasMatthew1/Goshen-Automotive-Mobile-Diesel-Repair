@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <!-- No type system is wired: the app falls back to the system UI stack until a
+         pair is chosen. Pick one to fit the brief, then add the Google Fonts <link>
+         here and set --font-display / --font-sans in src/globals.css to match. -->
+    <!-- SEO: these tags describe the HOME page — search engines and link
+         previews read them before JavaScript runs. Replace the title (brand +
+         what it is), and for a public-facing site add a meta description and
+         the og:/twitter: tags. No canonical or og:url here: each page sets
+         its own with usePageMeta (src/lib/seo.ts). -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:wght@100..900&family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Goshen Automotive Mobile Diesel Repair | Tucson, AZ</title>
+    <meta name="description" content="Expert on-site diesel and gas truck repair in Tucson, AZ. Powerstroke, Cummins, and Duramax specialists. Mobile diagnostics and maintenance at your location.">
+    <meta property="og:title" content="Goshen Automotive Mobile Diesel Repair | Tucson, AZ">
+    <meta property="og:description" content="Expert on-site diesel and gas truck repair in Tucson, AZ. Powerstroke, Cummins, and Duramax specialists.">
+    <meta property="og:image" content="/assets/hero-truck.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Goshen Automotive Mobile Diesel Repair | Tucson, AZ">
+    <meta name="twitter:description" content="Expert on-site diesel and gas truck repair in Tucson, AZ.">
+    <meta name="twitter:image" content="/assets/hero-truck.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Goshen Automotive Mobile Diesel Repair",
+      "image": "/assets/hero-truck.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5554 South Hildreth Avenue",
+        "addressLocality": "Tucson",
+        "addressRegion": "AZ",
+        "postalCode": "85706",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.1485,
+        "longitude": -110.9264
+      },
+      "url": "https://goshendiesel.com",
+      "telephone": "+15200000000",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ],
+      "areaServed": "Tucson and surrounding areas"
+    }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
