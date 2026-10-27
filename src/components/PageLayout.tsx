@@ -52,7 +52,7 @@ export function PageLayout({ children }: PageLayoutProps) {
     <SmoothScroll>
       <div className="min-h-screen bg-background text-foreground selection:bg-primary selection:text-primary-foreground">
         {/* Top Utility Bar */}
-        <div className="hidden lg:block bg-black border-b border-white/10 py-2">
+        <div className="hidden lg:block bg-black/60 backdrop-blur-md border-b border-white/10 py-2">
           <Container className="flex justify-between items-center text-[12px] font-logo uppercase tracking-widest text-zinc-100">
             <div className="flex gap-6">
               <div className="flex items-center gap-2">
@@ -73,10 +73,10 @@ export function PageLayout({ children }: PageLayoutProps) {
 
         {/* Header */}
         <header 
-          className={`fixed lg:sticky top-0 left-0 right-0 z-[100] transition-all duration-300 bg-black/75 backdrop-blur-xl border-b border-white/10 ${
+          className={`fixed lg:sticky top-0 left-0 right-0 z-[100] transition-all duration-300 backdrop-blur-xl border-b border-white/10 ${
             isScrolled 
-              ? "py-2.5 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)]" 
-              : "py-3.5 shadow-md"
+              ? "bg-black/60 py-2.5 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]" 
+              : "bg-black/35 py-3.5 shadow-sm"
           }`}
         >
           <Container className="flex items-center justify-between">
