@@ -30,46 +30,46 @@ export default function ServicesOverview() {
 
   const mainServices = [
     {
-      title: "Mobile Diagnostics",
+      title: "Diesel Diagnostics",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       href: "/diagnostics",
       icon: <Gauge weight="fill" />,
-      img: "/assets/diagnostic-tool.jpg"
+      img: "/assets/semi-truck-detail.jpg"
     },
     {
-      title: "Reliability & Engine",
+      title: "Engine Repair",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      href: "/reliability",
+      href: "/engine-repair",
+      icon: <Engine weight="fill" />,
+      img: "/assets/semi-mechanic-2.jpg"
+    },
+    {
+      title: "Preventive Maintenance",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      href: "/maintenance",
+      icon: <Toolbox weight="fill" />,
+      img: "/assets/truck-fleet.jpg"
+    },
+    {
+      title: "Electrical Systems",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      href: "/electrical",
+      icon: <Wrench weight="fill" />,
+      img: "/assets/semi-mechanic-1.jpg"
+    },
+    {
+      title: "Brakes & Drivetrain",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      href: "/brakes",
       icon: <ShieldCheck weight="fill" />,
-      img: "/assets/engine-bay.jpg"
+      img: "/assets/white-semi-truck.jpg"
     },
     {
       title: "Fuel Systems",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       href: "/fuel-systems",
       icon: <Pulse weight="fill" />,
-      img: "/assets/engine-inspection.jpg"
-    },
-    {
-      title: "Electrical & Modules",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      href: "/electrical",
-      icon: <Wrench weight="fill" />,
-      img: "/assets/mechanic-action.jpg"
-    },
-    {
-      title: "Emissions Control",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      href: "/emissions",
-      icon: <Shield weight="fill" />,
-      img: "/assets/fleet-service.jpg"
-    },
-    {
-      title: "Maintenance",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      href: "/maintenance",
-      icon: <Toolbox weight="fill" />,
-      img: "/assets/diesel-truck-hero.jpg"
+      img: "/assets/semi-truck-hero.jpg"
     }
   ];
 
@@ -79,7 +79,7 @@ export default function ServicesOverview() {
       <Section className="relative min-h-[70vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/engine-detail.jpg" 
+            src="/assets/semi-truck-hero.jpg" 
             alt="Technical Service" 
             className="w-full h-full object-cover"
           />
@@ -155,10 +155,10 @@ export default function ServicesOverview() {
               
               <div className="space-y-4">
                 {[
-                  { name: "Ford Powerstroke", href: "/ford-powerstroke", subtitle: "6.0L / 6.4L / 6.7L Expert Support" },
-                  { name: "Ram Cummins", href: "/ram-cummins", subtitle: "High-Pressure Rail & Performance" },
-                  { name: "GM Duramax", href: "/gm-duramax", subtitle: "Injector & Allison Transmission Service" },
-                  { name: "Heavy-Duty Gas", href: "/heavy-duty-gas", subtitle: "Fleet Gas Platform Diagnostics" }
+                  { name: "Semi-Truck Repair", href: "/commercial-truck-repair", subtitle: "Full-Service Mobile Tractor-Trailer Support" },
+                  { name: "Fleet Maintenance", href: "/fleet", subtitle: "Priority Dispatch & Scheduled PM Programs" },
+                  { name: "Diesel Diagnostics", href: "/diagnostics", subtitle: "Commercial Grade Computerized Fault Isolation" },
+                  { name: "Engine Performance", href: "/performance", subtitle: "Troubleshooting & Fuel System Conversions" }
                 ].map((plat) => (
                   <Link key={plat.href} to={plat.href} className="flex items-center justify-between p-8 bg-zinc-900 border border-white/5 rounded-none hover:border-primary transition-all group relative overflow-hidden">
                     <div className="relative z-10 text-left">
@@ -176,7 +176,7 @@ export default function ServicesOverview() {
             <Reveal delay={0.2}>
                <div className="relative aspect-square bg-zinc-900 rounded-none border border-white/10 overflow-hidden flex items-center justify-center group">
                   <img 
-                    src="/assets/mechanic-working.jpg" 
+                    src="/assets/semi-mechanic-1.jpg" 
                     alt="Platform Specialist at Work" 
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-70"
                   />
@@ -199,7 +199,7 @@ export default function ServicesOverview() {
       <Section className="relative overflow-hidden py-28 bg-zinc-950">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/diesel-truck-hero.jpg" 
+            src="/assets/truck-fleet.jpg" 
             alt="Ready for Service" 
             className="w-full h-full object-cover opacity-40"
           />

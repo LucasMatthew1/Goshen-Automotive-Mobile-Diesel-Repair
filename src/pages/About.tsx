@@ -32,8 +32,8 @@ export default function About() {
       <Section className="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/mechanic-action.jpg" 
-            alt="Integrity in Repair" 
+            src="/assets/kenworth-semi.jpg" 
+            alt="Commercial Semi-Truck Service Integrity" 
             className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -61,8 +61,8 @@ export default function About() {
             <Reveal>
               <div className="aspect-square bg-zinc-900 rounded-none overflow-hidden border border-white/10 relative group shadow-2xl">
                  <img 
-                    src="/assets/diagnostic-tool.jpg" 
-                    alt="Technical Diagnostics" 
+                    src="/assets/semi-truck-mechanic-service.jpg" 
+                    alt="Semi-Truck Diagnostic & Maintenance Service" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 opacity-70"
                  />
                  <div className="absolute inset-0 bg-black/20" />
@@ -80,21 +80,21 @@ export default function About() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
                 <div className="flex items-start gap-5 group">
-                  <div className="w-14 h-14 bg-zinc-950 border border-white/10 flex items-center justify-center rounded-none text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0 shadow-lg">
+                  <div className="w-14 h-14 bg-zinc-950 border border-white/10 flex items-center justify-center rounded-none text-white group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0 shadow-lg">
                     <Handshake weight="fill" size={28} />
                   </div>
                   <div>
                     <h4 className="text-white font-display font-black uppercase text-2xl italic leading-none mb-2">Transparency</h4>
-                    <p className="text-zinc-400 text-sm font-logo uppercase tracking-wider">Lorem ipsum dolor sit amet.</p>
+                    <p className="text-zinc-400 text-sm font-logo uppercase tracking-wider">Honest billing and diagnostics.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-5 group">
-                  <div className="w-14 h-14 bg-zinc-950 border border-white/10 flex items-center justify-center rounded-none text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0 shadow-lg">
+                  <div className="w-14 h-14 bg-zinc-950 border border-white/10 flex items-center justify-center rounded-none text-white group-hover:bg-primary group-hover:text-primary-foreground transition-all shrink-0 shadow-lg">
                     <HardHat weight="fill" size={28} />
                   </div>
                   <div>
                     <h4 className="text-white font-display font-black uppercase text-2xl italic leading-none mb-2">Expertise</h4>
-                    <p className="text-zinc-400 text-sm font-logo uppercase tracking-wider">Lorem ipsum dolor sit amet.</p>
+                    <p className="text-zinc-400 text-sm font-logo uppercase tracking-wider">Certified diesel technicians.</p>
                   </div>
                 </div>
               </div>
@@ -137,8 +137,8 @@ export default function About() {
       <Section className="relative overflow-hidden py-32 bg-black border-t border-white/10">
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
-            src="/assets/diesel-truck-hero.jpg" 
-            alt="Technical Support" 
+            src="/assets/commercial-semi-yard.jpg" 
+            alt="Semi-Truck Fleet Logistics Service" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
@@ -147,7 +147,7 @@ export default function About() {
           <Reveal hero>
             <h2 className="text-5xl md:text-7xl font-display font-black text-white leading-none mb-10 uppercase italic tracking-tighter">Ready for <span className="text-primary not-italic">Dispatch?</span></h2>
             <p className="text-zinc-200 text-xl md:text-3xl mb-12 max-w-3xl mx-auto font-medium uppercase tracking-tight">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Experience professional mobile diesel service designed for commercial trucking.
             </p>
             <div className="flex flex-wrap justify-center gap-8">
                <Button asChild size="lg" className="bg-primary text-primary-foreground font-display font-black text-3xl uppercase tracking-wider py-10 px-16 rounded-none hover:scale-105 transition-all shadow-2xl btn-shine">

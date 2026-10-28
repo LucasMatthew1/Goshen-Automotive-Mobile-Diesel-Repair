@@ -42,8 +42,8 @@ export default function Contact() {
       <Section className="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/diesel-truck-hero.jpg" 
-            alt="Dispatch Readiness" 
+            src="/assets/freightliner-semi.jpg" 
+            alt="Commercial Semi-Truck Fleet Dispatch" 
             className="w-full h-full object-cover opacity-60"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -59,7 +59,7 @@ export default function Contact() {
               <span className="text-primary not-italic">Dispatch</span>
             </h1>
             <p className="text-zinc-200 text-xl md:text-3xl font-medium max-w-2xl uppercase tracking-tight leading-none mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Provide vehicle details and symptoms for a mobile feasibility assessment and repair quote.
             </p>
           </Reveal>
         </Container>
@@ -73,34 +73,34 @@ export default function Contact() {
               <Reveal>
                 <div className="space-y-10">
                   <div className="flex gap-6 group">
-                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-primary flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-white flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                       <Phone size={28} weight="fill" />
                     </div>
                     <div>
                       <h4 className="font-display font-black uppercase text-white text-2xl mb-1 italic leading-none tracking-tight">Direct Dispatch</h4>
-                      <a href={`tel:${businessConfig.phoneRaw}`} className="text-3xl font-display font-black text-primary hover:text-white transition-colors tracking-tighter">{businessConfig.phone}</a>
+                      <a href={`tel:${businessConfig.phoneRaw}`} className="text-3xl font-display font-black text-white hover:text-primary transition-colors tracking-tighter leading-none block mt-2">{businessConfig.phone}</a>
                     </div>
                   </div>
 
                   <div className="flex gap-6 group">
-                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-primary flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-white flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                       <MapPin size={28} weight="fill" />
                     </div>
                     <div className="text-left">
                       <h4 className="font-display font-black uppercase text-white text-2xl mb-1 italic leading-none tracking-tight">Service Area</h4>
-                      <p className="text-zinc-200 leading-snug italic font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p className="text-zinc-200 leading-snug italic font-medium">Tucson, AZ and surrounding 30-mile radius. We come to you.</p>
                       <p className="text-zinc-400 text-xs mt-3 font-logo uppercase tracking-[0.2em]">{businessConfig.address}</p>
                     </div>
                   </div>
 
                   <div className="flex gap-6 group">
-                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-primary flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
+                    <div className="w-16 h-16 bg-zinc-900 border border-white/10 flex items-center justify-center rounded-none text-white flex-shrink-0 shadow-xl group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                       <Clock size={28} weight="fill" />
                     </div>
                     <div className="text-left">
                       <h4 className="font-display font-black uppercase text-white text-2xl mb-1 italic leading-none tracking-tight">Operational Hours</h4>
-                      <p className="text-zinc-200 leading-snug italic font-medium">Lorem ipsum dolor sit amet.</p>
-                      <p className="text-zinc-200 leading-snug italic font-medium">Lorem ipsum dolor sit amet.</p>
+                      <p className="text-zinc-200 leading-snug italic font-medium">{businessConfig.hours.weekdays}</p>
+                      <p className="text-zinc-200 leading-snug italic font-medium">{businessConfig.hours.saturday}</p>
                     </div>
                   </div>
                 </div>
@@ -110,10 +110,10 @@ export default function Contact() {
                 <div className="bg-zinc-900 border border-white/10 p-10 rounded-none relative overflow-hidden">
                    <div className="absolute top-0 right-0 w-2 h-full bg-primary/20" />
                    <h4 className="text-white font-display font-black uppercase text-2xl mb-6 italic tracking-tight flex items-center gap-3">
-                     <ShieldCheck weight="fill" className="text-primary" /> Feasibility
+                     <ShieldCheck weight="fill" className="text-white" /> Feasibility
                    </h4>
                    <p className="text-zinc-400 text-base leading-relaxed italic font-medium">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                     While we perform most diagnostics and repairs on-site, mobile availability depends on repair scope, parts, safety, and location.
                    </p>
                 </div>
               </Reveal>
@@ -162,22 +162,30 @@ export default function Contact() {
 
                     {/* Vehicle Info */}
                     <div className="space-y-3 md:col-span-2 border-t border-white/5 pt-8 mt-4 text-left">
-                      <Label htmlFor="vehicle_info" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Vehicle (Year, Make, Model)</Label>
-                      <Input id="vehicle_info" required placeholder="e.g. 2018 Ford F-350 Super Duty" className="bg-zinc-950 border-white/10 focus:border-primary text-white h-14 rounded-none" />
-                    </div>
-
-                    <div className="space-y-3 text-left">
-                      <Label htmlFor="engine_info" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Engine Type</Label>
-                      <Input id="engine_info" placeholder="e.g. 6.7L Powerstroke" className="bg-zinc-950 border-white/10 focus:border-primary text-white h-14 rounded-none" />
-                    </div>
-                    <div className="space-y-3 text-left">
-                      <Label htmlFor="mileage" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Mileage (Approx)</Label>
-                      <Input id="mileage" className="bg-zinc-950 border-white/10 focus:border-primary text-white h-14 rounded-none" />
+                      <Label htmlFor="truck_details" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Truck Details (Year/Make/Model or Fleet Unit #)</Label>
+                      <Input id="truck_details" required placeholder="e.g. 2020 Freightliner Cascadia or Unit #452" className="bg-zinc-950 border-white/10 focus:border-primary text-white h-14 rounded-none" />
                     </div>
 
                     <div className="space-y-3 md:col-span-2 text-left">
-                      <Label htmlFor="dtc_codes" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Symptoms & Trouble Codes (DTC)</Label>
-                      <Textarea id="dtc_codes" placeholder="Describe the problem. If check engine light is on, list codes if known." className="bg-zinc-950 border-white/10 focus:border-primary text-white min-h-[140px] rounded-none" />
+                      <Label htmlFor="service_needed" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Service Needed</Label>
+                      <Select>
+                        <SelectTrigger id="service_needed" className="bg-zinc-950 border-white/10 text-white h-14 rounded-none" aria-label="Service Needed">
+                          <SelectValue placeholder="Select service category" />
+                        </SelectTrigger>
+                        <SelectContent className="bg-zinc-900 border-white/10 text-white rounded-none">
+                          <SelectItem value="diagnostics">Diesel Diagnostics</SelectItem>
+                          <SelectItem value="engine">Engine Repair</SelectItem>
+                          <SelectItem value="maintenance">Preventive Maintenance (PM)</SelectItem>
+                          <SelectItem value="electrical">Electrical System</SelectItem>
+                          <SelectItem value="brakes">Brakes & Drivetrain</SelectItem>
+                          <SelectItem value="other">Other Commercial Repair</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+
+                    <div className="space-y-3 md:col-span-2 text-left">
+                      <Label htmlFor="issue_description" className="text-sm uppercase tracking-widest text-zinc-300 font-logo font-bold">Issue Description</Label>
+                      <Textarea id="issue_description" required placeholder="Describe the problem or symptoms. Include any active fault codes if available." className="bg-zinc-950 border-white/10 focus:border-primary text-white min-h-[140px] rounded-none" />
                     </div>
 
                     <div className="space-y-3 text-left">
@@ -202,8 +210,8 @@ export default function Contact() {
                        <Button type="submit" size="lg" className="w-full bg-primary text-primary-foreground font-display font-black text-4xl uppercase tracking-wider py-12 rounded-none shadow-2xl btn-shine hover:scale-[1.02] transition-all">
                          Request Dispatch Quote
                        </Button>
-                       <p className="text-[10px] text-zinc-500 font-logo uppercase tracking-[0.2em] mt-8 text-center">
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       <p className="text-xs text-zinc-400 font-logo uppercase tracking-[0.2em] mt-8 text-center">
+                         Transmission encrypted. Operational security protocols in place.
                        </p>
                     </div>
                   </form>

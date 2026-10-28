@@ -29,66 +29,66 @@ interface SpecializedServiceProps {
 
 const serviceContent = {
   diagnostics: {
-    title: "Mobile Diesel Diagnostics",
-    description: "Dealer-level troubleshooting for complex diesel and gasoline truck faults. We find what others miss.",
+    title: "Commercial Diesel Diagnostics",
+    description: "Dealer-level troubleshooting for complex commercial truck faults. We find what others miss.",
     icon: <Gauge weight="fill" size={48} />,
-    img: "/assets/diagnostic-tool.jpg",
+    img: "/assets/semi-truck-detail.jpg",
     details: [
       "Fault code analysis (DTC)",
       "CAN-bus troubleshooting",
       "Module programming & calibration",
       "Live data stream monitoring",
-      "Power balance & cylinder contribution tests",
+      "Commercial engine performance tests",
       "Electrical circuit analysis"
     ]
   },
   reliability: {
-    title: "Reliability & Bulletproofing",
-    description: "Addressing factory weak points to keep your truck on the road for the long haul.",
+    title: "Engine Performance & Repair",
+    description: "Addressing performance weak points to keep your commercial truck on the road.",
     icon: <Engine weight="fill" size={48} />,
-    img: "/assets/engine-bay.jpg",
+    img: "/assets/semi-mechanic-2.jpg",
     details: [
-      "Ford 6.0L oil cooler & head stud work",
-      "S&S Diesel DCR pump conversions",
-      "Timing chain & cam-phaser repairs",
+      "Commercial engine overhaul & repair",
+      "Turbocharger diagnostics & service",
+      "Cylinder head and valve adjustments",
       "Cooling system reliability upgrades",
-      "High-pressure oil system service",
-      "Preventive structural upgrades"
+      "High-pressure fuel system service",
+      "Performance troubleshooting"
     ]
   },
   "fuel-systems": {
-    title: "Fuel System Service",
-    description: "Critical fuel system diagnostics and repair for high-pressure common rail engines.",
+    title: "Truck Fuel Systems",
+    description: "Critical fuel system diagnostics and repair for high-pressure commercial diesel engines.",
     icon: <Drop weight="fill" size={48} />,
-    img: "/assets/engine-inspection.jpg",
+    img: "/assets/semi-truck-detail.jpg",
     details: [
       "Injector diagnostics & replacement",
-      "Injection pump (CP3, CP4, CP4.2) service",
-      "Lift pump upgrades & repair",
+      "Injection pump service & troubleshooting",
       "Fuel contamination cleanup",
-      "Filtration system optimization",
-      "Pressure regulator testing"
+      "Commercial filtration optimization",
+      "Pressure regulator testing",
+      "Fuel line & rail repair"
     ]
   },
   electrical: {
-    title: "Electrical & Modules",
-    description: "Specialized electrical troubleshooting and control module configuration.",
+    title: "Commercial Electrical",
+    description: "Specialized electrical troubleshooting for semi-truck chassis and engine systems.",
     icon: <Lightning weight="fill" size={48} />,
-    img: "/assets/mechanic-action.jpg",
+    img: "/assets/semi-mechanic-1.jpg",
     details: [
       "Chassis & engine wiring repair",
       "ECM/TCM/BCM programming",
-      "Key programming & Immobilizer reset",
-      "Custom wiring for fleet applications",
+      "Starting and charging system service",
+      "Custom wiring for commercial apps",
       "Secondary system troubleshooting",
       "Sensor & actuator calibration"
     ]
   },
   emissions: {
-    title: "DPF & Emissions Diagnostics",
-    description: "Lawful maintenance and diagnostics for complex exhaust aftertreatment systems.",
+    title: "DPF & Emissions Service",
+    description: "Lawful maintenance and diagnostics for commercial exhaust aftertreatment systems.",
     icon: <Shield weight="fill" size={48} />,
-    img: "/assets/fleet-service.jpg",
+    img: "/assets/truck-fleet.jpg",
     details: [
       "Stationary forced DPF regeneration",
       "NOx & PM sensor diagnostics",
@@ -99,59 +99,59 @@ const serviceContent = {
     ]
   },
   maintenance: {
-    title: "Maintenance & Fluids",
-    description: "Convenient on-site preventive maintenance to extend vehicle life.",
+    title: "Preventive Maintenance",
+    description: "Convenient on-site PM services to extend the life of your commercial assets.",
     icon: <ShieldCheck weight="fill" size={48} />,
-    img: "/assets/diesel-truck-hero.jpg",
+    img: "/assets/truck-fleet.jpg",
     details: [
-      "Synthetic oil & filtration service",
+      "Semi-truck oil & filtration service",
       "Transmission & drivetrain fluid exchange",
       "Coolant analysis & flush",
-      "Differential & transfer case service",
+      "Differential & axle service",
       "Multi-point safety inspections",
-      "Fleet maintenance scheduling"
+      "Commercial fleet scheduling"
     ]
   },
   brakes: {
-    title: "Brakes, Steering & Suspension",
-    description: "Critical chassis maintenance to ensure safe operation and load handling.",
+    title: "Air Brakes & Drivetrain",
+    description: "Critical maintenance for semi-truck braking and drivetrain systems.",
     icon: <Wrench weight="fill" size={48} />,
-    img: "/assets/engine-bay.jpg",
+    img: "/assets/white-semi-truck.jpg",
     details: [
-      "Heavy-duty brake service & rotors",
-      "Tie rod, drag link & ball joint replacement",
-      "CV axle & hub bearing service",
-      "Control arm & bushing replacement",
-      "Shock & strut installation",
-      "Steering box & pump diagnostics"
+      "Commercial air brake service",
+      "Drum and shoe replacement",
+      "Transmission & clutch troubleshooting",
+      "Differential and u-joint service",
+      "Wheel bearing and hub repair",
+      "Driveline vibration analysis"
     ]
   },
   performance: {
-    title: "Performance Upgrades",
-    description: "Enhancing efficiency and power with high-quality aftermarket solutions.",
+    title: "Efficiency Upgrades",
+    description: "Enhancing efficiency and reliability with professional diesel solutions.",
     icon: <Pulse weight="fill" size={48} />,
-    img: "/assets/engine-detail.jpg",
+    img: "/assets/semi-truck-hero.jpg",
     details: [
-      "Banks Power induction & exhaust",
-      "AMSOIL synthetic lubrication systems",
-      "No Limit Fabrication components",
-      "PPE performance upgrades",
-      "Turbocharger optimization",
-      "Intake & cooling improvements"
+      "Fuel efficiency optimization",
+      "Turbocharger and intake service",
+      "Advanced lubrication solutions",
+      "Reliability component upgrades",
+      "Cooling system improvements",
+      "Custom commercial configurations"
     ]
   },
   "heavy-duty-gas": {
-    title: "Heavy-Duty Gas Trucks",
-    description: "Specialized service for HD gas work trucks including Ford V10 and Chevy Vortec.",
+    title: "Commercial Gas Trucks",
+    description: "Specialized service for heavy-duty gas commercial vehicles.",
     icon: <Truck weight="fill" size={48} />,
-    img: "/assets/mechanic-action.jpg",
+    img: "/assets/semi-mechanic-1.jpg",
     details: [
-      "Ford 7.3L Godzilla service",
-      "HEMI exhaust manifold stud extraction",
-      "Ford V10 spark plug/coil repair",
-      "GM 6.0L & 6.2L timing repairs",
-      "HD gas engine diagnostics",
-      "Work truck maintenance"
+      "Commercial gas engine diagnostics",
+      "Starting and charging systems",
+      "Cooling and fuel maintenance",
+      "Drivetrain and chassis repair",
+      "Preventive maintenance",
+      "Fleet gas vehicle support"
     ]
   }
 };
@@ -198,16 +198,16 @@ export default function SpecializedService({ type }: SpecializedServiceProps) {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <Reveal>
-              <div className="bg-zinc-800 border border-white/10 p-12 rounded-none relative overflow-hidden">
+              <div className="bg-zinc-800 border border-white/10 p-12 rounded-none relative overflow-hidden shadow-2xl">
                 <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
-                <div className="w-20 h-20 bg-zinc-950 border border-white/10 flex items-center justify-center rounded-none mb-10 text-primary">
+                <div className="w-20 h-20 bg-black border border-white/20 flex items-center justify-center rounded-none mb-10 text-primary">
                   {content.icon}
                 </div>
                 <h2 className="text-4xl font-display font-black uppercase mb-10 italic tracking-tighter text-white">Capabilities <span className="text-primary not-italic">Manifest</span></h2>
                 <ul className="space-y-6">
                   {content.details.map((detail) => (
-                    <li key={detail} className="flex items-center gap-4 text-zinc-200 font-logo text-sm uppercase tracking-wider">
-                      <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(0,96,192,0.8)]" />
+                    <li key={detail} className="flex items-center gap-4 text-zinc-100 font-logo text-sm uppercase tracking-wider">
+                      <div className="w-2 h-2 rounded-full bg-white shadow-[0_0_8px_rgba(255,255,255,0.5)]" />
                       {detail}
                     </li>
                   ))}
@@ -217,7 +217,7 @@ export default function SpecializedService({ type }: SpecializedServiceProps) {
 
             <div className="space-y-16">
               <Reveal delay={0.2}>
-                <h3 className="text-4xl font-display font-black uppercase mb-10 italic tracking-tighter text-white">Repair <span className="text-primary not-italic">Protocol</span></h3>
+                <h3 className="text-3xl md:text-5xl font-display font-black uppercase mb-10 italic tracking-tighter text-white">Repair <span className="text-primary not-italic">Protocol</span></h3>
                 <div className="space-y-10">
                   {[
                     { step: "01", title: "Remote Triage", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
@@ -225,10 +225,10 @@ export default function SpecializedService({ type }: SpecializedServiceProps) {
                     { step: "03", title: "Verified Fix", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
                   ].map((item) => (
                     <div key={item.step} className="flex gap-8 group">
-                      <span className="text-5xl font-display font-black text-primary leading-none italic group-hover:scale-110 transition-transform">{item.step}</span>
+                      <span className="text-4xl md:text-5xl font-display font-black text-primary leading-none italic group-hover:text-white transition-all group-hover:scale-110">{item.step}</span>
                       <div>
-                        <h4 className="text-2xl font-display font-black uppercase text-white mb-2 italic">{item.title}</h4>
-                        <p className="text-zinc-400 text-lg leading-relaxed">{item.text}</p>
+                        <h4 className="text-xl md:text-2xl font-display font-black uppercase text-white mb-2 italic">{item.title}</h4>
+                        <p className="text-zinc-400 text-base md:text-lg leading-relaxed">{item.text}</p>
                       </div>
                     </div>
                   ))}
@@ -236,12 +236,12 @@ export default function SpecializedService({ type }: SpecializedServiceProps) {
               </Reveal>
 
               <Reveal delay={0.3}>
-                <div className="bg-zinc-950 border border-white/10 p-10 rounded-none relative overflow-hidden">
+                <div className="bg-zinc-950 border border-white/10 p-10 rounded-none relative overflow-hidden shadow-xl">
                   <div className="absolute top-0 right-0 w-2 h-full bg-primary/20" />
                   <h4 className="text-white font-display font-black uppercase mb-6 flex items-center gap-3 italic text-xl">
                     <Warning weight="fill" className="text-primary" /> Service Limitations
                   </h4>
-                  <p className="text-zinc-400 text-base leading-relaxed font-medium">
+                  <p className="text-zinc-300 text-base leading-relaxed font-medium italic">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                   </p>
                 </div>
@@ -253,7 +253,7 @@ export default function SpecializedService({ type }: SpecializedServiceProps) {
 
       <Section className="bg-zinc-950 border-t border-white/5 relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img src="/assets/mechanic-action.jpg" alt="Dispatch" className="w-full h-full object-cover" />
+          <img src="/assets/red-semi-truck.jpg" alt="Commercial Semi-Truck Dispatch" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <Container className="text-center relative z-10">

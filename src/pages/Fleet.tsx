@@ -45,7 +45,7 @@ export default function Fleet() {
       <Section className="relative min-h-[70vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/fleet-service.jpg" 
+            src="/assets/truck-fleet.jpg" 
             alt="Commercial Fleet Support" 
             className="w-full h-full object-cover"
           />
@@ -174,7 +174,7 @@ export default function Fleet() {
       <Section className="relative overflow-hidden py-32 bg-black border-t border-white/10">
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
-            src="/assets/engine-bay.jpg" 
+            src="/assets/semi-truck-hero.jpg" 
             alt="Technical Support" 
             className="w-full h-full object-cover"
           />

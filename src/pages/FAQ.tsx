@@ -51,7 +51,7 @@ export default function FAQ() {
       {/* Hero Section */}
       <Section className="relative min-h-[50vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0 opacity-20">
-          <img src="/assets/engine-bay.jpg" alt="Technical Info" className="w-full h-full object-cover" />
+          <img src="/assets/semi-engine-check.jpg" alt="Commercial Semi-Truck Technical Info" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <Container className="relative z-10">

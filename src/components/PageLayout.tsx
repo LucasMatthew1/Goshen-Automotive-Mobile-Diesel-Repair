@@ -14,7 +14,7 @@ import {
   Truck,
   Envelope
 } from "@phosphor-icons/react";
-import { businessConfig, enginePlatforms } from "@/data/businessConfig";
+import { businessConfig } from "@/data/businessConfig";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/layout";
 import { SmoothScroll } from "@/components/smooth-scroll";
@@ -42,9 +42,8 @@ export function PageLayout({ children }: PageLayoutProps) {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Fleet", href: "/fleet" },
+    { name: "Truck Repair", href: "/commercial-truck-repair" },
     { name: "About", href: "/about" },
-    { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -75,8 +74,8 @@ export function PageLayout({ children }: PageLayoutProps) {
         <header 
           className={`fixed lg:sticky top-0 left-0 right-0 z-[100] transition-all duration-300 backdrop-blur-xl border-b border-white/10 ${
             isScrolled 
-              ? "bg-black/60 py-2.5 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]" 
-              : "bg-black/35 py-3.5 shadow-sm"
+              ? "bg-black/90 py-2.5 shadow-[0_8px_32px_0_rgba(0,0,0,0.6)]" 
+              : "bg-black/60 py-3.5 shadow-md"
           }`}
         >
           <Container className="flex items-center justify-between">
@@ -95,7 +94,7 @@ export function PageLayout({ children }: PageLayoutProps) {
                   key={link.name} 
                   to={link.href}
                   className={`text-sm font-black uppercase tracking-wider transition-all hover:text-primary ${
-                    location.pathname === link.href ? "text-white border-b-2 border-primary" : "text-zinc-100"
+                    location.pathname === link.href ? "text-white border-b-2 border-primary" : "text-white"
                   }`}
                 >
                   {link.name}
@@ -217,22 +216,22 @@ export function PageLayout({ children }: PageLayoutProps) {
               </div>
 
               <div>
-                <h4 className="text-white font-display font-black uppercase tracking-widest text-lg mb-8">Service Platforms</h4>
+                <h4 className="text-white font-display font-black uppercase tracking-widest text-lg mb-8">Truck Services</h4>
                 <ul className="space-y-4">
-                  <li><Link to="/ford-powerstroke" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Ford Powerstroke</Link></li>
-                  <li><Link to="/ram-cummins" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Ram Cummins</Link></li>
-                  <li><Link to="/gm-duramax" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> GM Duramax</Link></li>
-                  <li><Link to="/heavy-duty-gas" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Heavy-Duty Gas</Link></li>
+                  <li><Link to="/commercial-truck-repair" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Semi-Truck Repair</Link></li>
+                  <li><Link to="/services" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Diesel Diagnostics</Link></li>
+                  <li><Link to="/services" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Preventive Maintenance</Link></li>
+                  <li><Link to="/services" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Engine Overhaul</Link></li>
                 </ul>
               </div>
 
               <div>
                 <h4 className="text-white font-display font-black uppercase tracking-widest text-lg mb-8">Quick Links</h4>
                 <ul className="space-y-4">
-                  <li><Link to="/services" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> All Services</Link></li>
+                  <li><Link to="/about" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> About Us</Link></li>
                   <li><Link to="/fleet" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Fleet Services</Link></li>
                   <li><Link to="/faq" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> FAQs</Link></li>
-                  <li><Link to="/contact" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Request Repair</Link></li>
+                  <li><Link to="/contact" className="text-zinc-100 hover:text-primary transition-colors flex items-center gap-3 font-medium"><CaretRight size={14} className="text-primary" /> Request Service</Link></li>
                 </ul>
               </div>
 

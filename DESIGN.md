@@ -1,27 +1,26 @@
-# Design: Noir Signal (Rugged Diesel Edition)
+# Design: Noir Signal (Rugged Commercial Diesel Edition)
 
 ## Concept
-- **Mood:** Professional / Rugged / Technical
-- **Metaphor:** Heavy-duty precision / Industrial strength
-- **Visuals:** Deep shadows, metallic textures, high-contrast typography, technical overlays.
+- **Mood:** Professional / Rugged / Technical / Industrial
+- **Metaphor:** Heavy-duty precision / Long-haul reliability
+- **Visuals:** High-contrast noir, metallic surfaces, commercial trucking aesthetics (chrome, rivets, heavy steel).
 
 ## Art Direction
 - **Typography:**
-  - Display/Headings: Inter (Bold/Medium)
-  - Accents: Instrument Serif (Italic) for specialized terms
-  - Body: Inter (Regular)
+  - Display/Headings: Unbounded (Bold/Black) for industrial punch
+  - Secondary/UI: Big Shoulders Display (Medium/SemiBold) for technical look
+  - Body: Inter (Regular) for readability
 - **Palette:**
-  - Primary: #000000 (Black)
-  - Accent: #003366 (Deep Blue)
-  - Surface: #111111 (Dark Gray)
-  - Technical: #E5E7EB (Silver/Metallic)
-  - Foreground: #FFFFFF (White)
+  - Primary: #005bc4 (Deep Industrial Blue - updated to match logo if applicable, or a rugged blue)
+  - Surface: #000000 (Pure Black)
+  - Accent: #e2e8f0 (Cold Steel / Silver)
+  - Muted: #1a1a1a (Deep Gray)
 - **Motion:**
-  - Entrance: Staggered reveal per Noir Signal spec.
-  - Interaction: Liquid-glass buttons with silver borders.
-  - Scroll: Smooth scroll (Lenis) with GSAP sync.
+  - Entrance: Industrial staggered reveals (bottom to top).
+  - Interaction: Metallic border glows and sharp-edged transitions.
+  - Scroll: Heavy-duty smooth scroll.
 
 ## Layout
-- **Hero:** Bottom-centered copy over a full-bleed diesel engine/truck background.
-- **Sections:** Clean cards with metallic hairlines and technical icons.
-- **Navigation:** Sticky pill-shaped "liquid metal" nav links.
+- **Hero:** Impactful full-bleed commercial trucking imagery with oversized industrial type.
+- **Sections:** Grid-based technical readouts, high-contrast separation, and bold iconography.
+- **Navigation:** Technical top-bar with quick-access contact protocols.

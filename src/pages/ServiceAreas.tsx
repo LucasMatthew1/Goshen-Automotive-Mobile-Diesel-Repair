@@ -18,7 +18,7 @@ export default function ServiceAreas() {
       {/* Hero Section */}
       <Section className="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden bg-black">
         <div className="absolute inset-0 z-0 opacity-40">
-          <img src="/assets/hero-truck.jpg" alt="Service Coverage" className="w-full h-full object-cover" />
+          <img src="/assets/white-semi-truck.jpg" alt="Service Coverage" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <Container className="relative z-10">
@@ -50,7 +50,7 @@ export default function ServiceAreas() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {businessConfig.serviceArea.cities.map((city) => (
-                  <div key={city} className="flex items-center gap-4 p-6 bg-zinc-900 border border-white/5 rounded-none group hover:border-primary transition-all">
+                  <div key={city} className="flex items-center gap-4 p-6 bg-black/40 border border-white/5 rounded-none group hover:border-primary transition-all">
                     <MapPin className="text-primary group-hover:scale-110 transition-transform" weight="fill" size={24} />
                     <span className="text-white font-display font-black uppercase italic text-2xl tracking-tight leading-none">{city}</span>
                   </div>
@@ -63,9 +63,9 @@ export default function ServiceAreas() {
             
             <Reveal delay={0.2}>
               <div className="aspect-square bg-zinc-900 rounded-none border border-white/10 flex flex-col items-center justify-center text-center p-12 relative overflow-hidden group shadow-2xl">
-                 <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#005bc4_1px,transparent_1px)] [background-size:20px_20px] group-hover:opacity-10 transition-opacity" />
-                 <NavigationArrow size={120} weight="fill" className="text-primary mb-10 group-hover:scale-110 transition-transform animate-float" />
-                 <h3 className="text-4xl font-display font-black uppercase text-white mb-6 italic tracking-tighter">Request On-Site <br /><span className="text-primary not-italic">Dispatch</span></h3>
+                 <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#0060c0_1px,transparent_1px)] [background-size:20px_20px] group-hover:opacity-10 transition-opacity" />
+                 <NavigationArrow size={120} weight="fill" className="text-white mb-10 group-hover:text-primary group-hover:scale-110 transition-all animate-float" />
+                 <h3 className="text-4xl font-display font-black uppercase text-white mb-6 italic tracking-tighter leading-none">Request On-Site <br /><span className="text-primary not-italic">Dispatch</span></h3>
                  <p className="text-zinc-400 text-lg font-medium italic mb-10 max-w-xs mx-auto">Provide your location for a fast mobile feasibility check and repair quote.</p>
                  <Button asChild size="lg" className="bg-primary text-primary-foreground font-display font-black text-3xl uppercase tracking-wider py-10 px-16 rounded-none hover:scale-105 transition-all shadow-2xl btn-shine">
                    <a href={`tel:${businessConfig.phoneRaw}`}>Check Availability</a>

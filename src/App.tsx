@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { getPreviewRouterBasename } from "@/lib/previewBase";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
-import EnginePlatformPage from "./pages/EnginePlatform";
+import CommercialTruckRepair from "./pages/CommercialTruckRepair";
 import Fleet from "./pages/Fleet";
 import About from "./pages/About";
 import FAQ from "./pages/FAQ";
@@ -30,15 +30,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
-          
-          {/* Platform Pages */}
-          <Route path="/ford-powerstroke" element={<EnginePlatformPage platform="ford" />} />
-          <Route path="/ram-cummins" element={<EnginePlatformPage platform="ram" />} />
-          <Route path="/gm-duramax" element={<EnginePlatformPage platform="gm" />} />
+          <Route path="/commercial-truck-repair" element={<CommercialTruckRepair />} />
           
           {/* Specialized Service Pages */}
           <Route path="/diagnostics" element={<SpecializedService type="diagnostics" />} />
-          <Route path="/reliability" element={<SpecializedService type="reliability" />} />
+          <Route path="/engine-repair" element={<SpecializedService type="reliability" />} />
           <Route path="/fuel-systems" element={<SpecializedService type="fuel-systems" />} />
           <Route path="/electrical" element={<SpecializedService type="electrical" />} />
           <Route path="/emissions" element={<SpecializedService type="emissions" />} />
